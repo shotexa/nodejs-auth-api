@@ -1,0 +1,17 @@
+version: '3'
+services:
+  companies:
+    build: './auth-api'
+    ports:
+      - "8080:8080"
+    depends_on: 
+      - mongo
+    environment:
+      - MONGO_URI=mongodb://mongo/upstack
+  
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - auth-api/mongo/data/db:/data/db
