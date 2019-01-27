@@ -70,7 +70,6 @@
         ],
         "arrow-spacing": 2,
         "brace-style": 2,
-        "callback-return": 2,
         "camelcase": 2,
         "capitalized-comments": 0,
         "no-return-await": 2,
@@ -93,6 +92,7 @@
         "node": true,
         "commonjs": true,
         "phantomjs": false,
-        "es6": true
+        "es6": true,
+        "mocha": true
     }
 }
