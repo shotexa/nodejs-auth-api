@@ -22,7 +22,7 @@ get JWT token. Example patch request body:
 ```javascript
 {
   "email": "shota@email.com",
-  "password": "shota123456
+  "password": "shota123456"
 }
 ```
 
