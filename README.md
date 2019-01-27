@@ -18,7 +18,7 @@ Register a new user. Example post request body:
 ```
 
 #### POST /api/auth/login
-get JWT token. Example patch request body:
+get JWT token (if activated). Example patch request body:
 ```javascript
 {
   "email": "shota@email.com",
@@ -30,4 +30,4 @@ get JWT token. Example patch request body:
 requires `x-access-token` with valid JWT token to acces
 
 #### GET /api/auth/activate/:token
-activates the user and enables login
+activates the user and enables login (should receive the link via email) 
